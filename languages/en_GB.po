@@ -1,0 +1,107 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPPB Demo\n"
+"POT-Creation-Date: 2015-09-12 13:49-0400\n"
+"PO-Revision-Date: 2015-09-12 13:50-0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.4\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin/class-wppb-demo-plugin-settings.php:129
+msgid "WPPB Demo Options"
+msgstr "WPPB Demo Options"
+
+#: admin/class-wppb-demo-plugin-settings.php:143
+#: admin/class-wppb-demo-plugin-settings.php:232
+msgid "Display Options"
+msgstr "Display Options"
+
+#: admin/class-wppb-demo-plugin-settings.php:144
+#: admin/class-wppb-demo-plugin-settings.php:295
+msgid "Social Options"
+msgstr ""
+
+#: admin/class-wppb-demo-plugin-settings.php:145
+#: admin/class-wppb-demo-plugin-settings.php:349
+msgid "Input Examples"
+msgstr ""
+
+#: admin/class-wppb-demo-plugin-settings.php:187
+msgid "Select which areas of content you wish to display."
+msgstr ""
+
+#: admin/class-wppb-demo-plugin-settings.php:199
+msgid "Provide the URL to the social networks you'd like to display."
+msgstr ""
+
+#: admin/class-wppb-demo-plugin-settings.php:211
+msgid "Provides examples of the five basic element types."
+msgstr ""
+
+#: admin/class-wppb-demo-plugin-settings.php:240
+msgid "Header"
+msgstr ""
+
+#: admin/class-wppb-demo-plugin-settings.php:245
+msgid "Activate this setting to display the header."
+msgstr ""
+
+#: admin/class-wppb-demo-plugin-settings.php:251
+msgid "Content"
+msgstr ""
+
+#: admin/class-wppb-demo-plugin-settings.php:256
+msgid "Activate this setting to display the content."
+msgstr ""
+
+#: admin/class-wppb-demo-plugin-settings.php:262
+msgid "Footer"
+msgstr ""
+
+#: admin/class-wppb-demo-plugin-settings.php:267
+msgid "Activate this setting to display the footer."
+msgstr ""
+
+#: admin/class-wppb-demo-plugin-settings.php:356
+msgid "Input Element"
+msgstr ""
+
+#: admin/class-wppb-demo-plugin-settings.php:364
+msgid "Textarea Element"
+msgstr ""
+
+#: admin/class-wppb-demo-plugin-settings.php:372
+msgid "Checkbox Element"
+msgstr ""
+
+#: admin/class-wppb-demo-plugin-settings.php:380
+msgid "Radio Button Elements"
+msgstr ""
+
+#: admin/class-wppb-demo-plugin-settings.php:388
+msgid "Select Element"
+msgstr ""
+
+#: admin/class-wppb-demo-plugin-settings.php:541
+msgid "Select a time option..."
+msgstr ""
+
+#: admin/class-wppb-demo-plugin-settings.php:542
+msgid "Never"
+msgstr ""
+
+#: admin/class-wppb-demo-plugin-settings.php:543
+msgid "Sometimes"
+msgstr ""
+
+#: admin/class-wppb-demo-plugin-settings.php:544
+msgid "Always"
+msgstr ""
