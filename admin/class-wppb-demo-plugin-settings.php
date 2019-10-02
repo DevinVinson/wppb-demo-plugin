@@ -284,7 +284,7 @@ class Wppb_Demo_Admin_Settings {
 	 * This function is registered with the 'admin_init' hook.
 	 */
 	public function initialize_social_options() {
-		delete_option('wppb_demo_social_options');
+		//delete_option('wppb_demo_social_options');
 		if( false == get_option( 'wppb_demo_social_options' ) ) {
 			$default_array = $this->default_social_options();
 			update_option( 'wppb_demo_social_options', $default_array );
