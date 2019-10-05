@@ -284,7 +284,7 @@ class Wppb_Demo_Admin_Settings {
 	 * This function is registered with the 'admin_init' hook.
 	 */
 	public function initialize_social_options() {
-		delete_option('wppb_demo_social_options');
+		//delete_option('wppb_demo_social_options');
 		if( false == get_option( 'wppb_demo_social_options' ) ) {
 			$default_array = $this->default_social_options();
 			update_option( 'wppb_demo_social_options', $default_array );
@@ -412,7 +412,8 @@ class Wppb_Demo_Admin_Settings {
 
 		// Next, we update the name attribute to access this element's ID in the context of the display options array
 		// We also access the show_header element of the options collection in the call to the checked() helper function
-		$html = '<input type="checkbox" id="show_header" name="wppb_demo_display_options[show_header]" value="1" ' . checked( 1, isset( $options['show_header'] ) ? $options['show_header'] : 0, false ) . '/>';
+		$html = '<input type="hidden"    id="show_header" name="wppb_demo_display_options[show_header]" value="0" />';
+		$html .= '<input type="checkbox" id="show_header" name="wppb_demo_display_options[show_header]" value="1" ' . checked( 1, isset( $options['show_header'] ) ? $options['show_header'] : 0, false ) . '/>';
 
 		// Here, we'll take the first argument of the array and add it to a label next to the checkbox
 		$html .= '<label for="show_header">&nbsp;'  . $args[0] . '</label>';
@@ -425,7 +426,8 @@ class Wppb_Demo_Admin_Settings {
 
 		$options = get_option('wppb_demo_display_options');
 
-		$html = '<input type="checkbox" id="show_content" name="wppb_demo_display_options[show_content]" value="1" ' . checked( 1, isset( $options['show_content'] ) ? $options['show_content'] : 0, false ) . '/>';
+		$html = '<input type="hidden"    id="show_content" name="wppb_demo_display_options[show_content]" value="0" />';
+		$html .= '<input type="checkbox" id="show_content" name="wppb_demo_display_options[show_content]" value="1" ' . checked( 1, isset( $options['show_content'] ) ? $options['show_content'] : 0, false ) . '/>';
 		$html .= '<label for="show_content">&nbsp;'  . $args[0] . '</label>';
 
 		echo $html;
@@ -436,7 +438,8 @@ class Wppb_Demo_Admin_Settings {
 
 		$options = get_option('wppb_demo_display_options');
 
-		$html = '<input type="checkbox" id="show_footer" name="wppb_demo_display_options[show_footer]" value="1" ' . checked( 1, isset( $options['show_footer'] ) ? $options['show_footer'] : 0, false ) . '/>';
+		$html = '<input type="hidden"    id="show_footer" name="wppb_demo_display_options[show_footer]" value="0" />';
+		$html .= '<input type="checkbox" id="show_footer" name="wppb_demo_display_options[show_footer]" value="1" ' . checked( 1, isset( $options['show_footer'] ) ? $options['show_footer'] : 0, false ) . '/>';
 		$html .= '<label for="show_footer">&nbsp;'  . $args[0] . '</label>';
 
 		echo $html;
@@ -509,7 +512,8 @@ class Wppb_Demo_Admin_Settings {
 
 		$options = get_option( 'wppb_demo_input_examples' );
 
-		$html = '<input type="checkbox" id="checkbox_example" name="wppb_demo_input_examples[checkbox_example]" value="1"' . checked( 1, $options['checkbox_example'], false ) . '/>';
+		$html = '<input type="hidden"   id="checkbox_example" name="wppb_demo_input_examples[checkbox_example]" value="0" />';
+		$html .= '<input type="checkbox" id="checkbox_example" name="wppb_demo_input_examples[checkbox_example]" value="1"' . checked( 1, isset( $options['checkbox_example'] ) ? $options['checkbox_example'] : 0, false ) . '/>';
 		$html .= '&nbsp;';
 		$html .= '<label for="checkbox_example">This is an example of a checkbox</label>';
 
